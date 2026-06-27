@@ -15,7 +15,10 @@ body{
 body::-webkit-scrollbar {
     display: none;
 }
-
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 /* Скрыть для IE, Edge и Firefox */
 body {
     -ms-overflow-style: none;  /* IE и Edge */
