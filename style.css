@@ -1715,11 +1715,7 @@ footer {
         font-size: 32px;
     }
     #menu-content-middle-hidden{
-        margin-top: 100px;
+        margin-top: 120px;
     }
 }
-@media (max-width: 350px){
-    #menu-content-middle-hidden{
-        margin-top: 150px;
-    }
-}
+
