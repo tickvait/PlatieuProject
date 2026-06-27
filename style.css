@@ -1659,7 +1659,7 @@ footer {
         font-size: 12px;
     }
     #menu-content-middle-hidden{
-        margin-top: 60px;
+        padding: 60px;
     }
 }
 @media (max-width: 420px){
