@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Platieu</title>
+    <link rel="shortcut icon" href="media/icon/MainIcon.svg" type="image/png">
+    <link rel="icon" href="media/icon/MainIcon.svg" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <img src="media/icon/Logo.svg" alt="logo">
+        <div id="MenuBtnForPC">
+            <button class = "SearchBtn" onclick="scrollToSection('hero_section')">Home</button>
+            <button class = "SearchBtn" onclick="scrollToSection('company_info_section')">Our Story</button>
+            <button class = "SearchBtn" onclick="scrollToSection('menu')">Menu</button>
+            <button class = "SearchBtn" onclick="scrollToSection('contact-map-container')">Location</button>
+            <button class = "SearchBtn" onclick="scrollToSection('blog')">News</button>
+        </div>
+        <button id="reserve_btn" onclick="scrollToSection('contact')">Reserve a Seat</button>
+
+        <div class="burger_menu_container">
+            
+            <div id="dropdown-menu" class="hidden">
+            
+                <button class = "dropdown-menu_button" onclick="scrollToSection('hero_section')">Home</button>
+                <button class = "dropdown-menu_button" onclick="scrollToSection('company_info_section')">Our Story</button>
+                <button class = "dropdown-menu_button" onclick="scrollToSection('menu')">Menu</button>
+                <button class = "dropdown-menu_button" onclick="scrollToSection('contact-map-container')">Location</button>
+                <button class = "dropdown-menu_button" onclick="scrollToSection('blog')">News</button>
+                <div class="reserve-btn1">
+                <button  onclick="scrollToSection('contact')">Reserve a Seat</button>
+                </div>
+            </div>
+        </div>
+        <button id="burger_btn">
+            <img src="media/icon/burger_btn.svg" alt="menu button">
+        </button>
+        
+    </header>
+    
+    <main>
+        <section id="hero_section">
+            <div class="hero_content">
+                <img src="media/icon/Union.svg" alt="Приветсвенное изображение">
+                <h3>Welcome to our restaurant</h3>
+                <p>Savor exquisite culinary creations prepared with fresh, local ingredients. Each dish celebrates vibrant flavors, presented in an ambiance of sophistication. Join us for an unforgettable dining experience where every bite tells a story.</p>
+                <h1>A Symphony of Flavors in Every Bite</h1>
+                <div class="hero_buttons"> 
+                    <button onclick="scrollToSection('menu')">Our Menu</button>
+                    <button onclick="scrollToSection('contact')">Reserve a Seat</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section id= "company_info_section">
+            <div class="company_info_content">
+                <div class="company_content_top">
+                    <h3>Our Company</h3>
+                    <div class="company_top_right">
+                        <p>Since its opening, the Restaurant has become a place where taste, quality, and dining experience unite in harmony. We are here with a passion for serving delicious food made from the finest fresh ingredients, combined with a touch of love and creativity from our kitchen.</p>
+                        <p>We believe that food is not just a means to fill the stomach, but a part of the story, happiness, and togetherness. That’s why every dish at the Restaurant is prepared with great care, to create special moments for you and your loved ones.</p>
+                        <div class="company_top_right_stats">
+                            <div>
+                                <h4>10+ years</h4>
+                                <h5>of Culinary Excellence</h5>
+                            </div>
+                            <div>
+                                <h4>5 awards</h4>
+                                <h5>Winning Chefs</h5>
+                            </div>
+                            <div>
+                                <h4>4.9/5</h4>
+                                <h5>Customer Rating on Average</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company_content_bottom">
+                    <img src="media/images/IMG_company_content_bottom1.png" alt="Кулинария">
+                    <img src="media/images/IMG_company_content_bottom2.png" alt="Кулинария">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="menu-content">
+                <div class="menu-content-top">
+                    <h3>Chef’s Favorites</h3>
+                    <p>The dishes our chef can’t stop thinking about, and neither will you.</p>
+                </div>
+                
+                <div id="menu-content-middle" class="menu-visible">
+                    <div class="menu-part">
+                        <img src="media/images/Garlic_Cheese_Bread.png" alt="Garlic Cheese Bread">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Garlic Cheese Bread</h4>
+                                <div></div>
+                                <h4>$7</h4>
+                            </div>
+                            <p>Toasted baguette with a blend of mozzarella cheese and garlic butter. Lorem ipsum dolor sit amet slur hehe wadaw mantap.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/Stuffed_Mushrooms.png" alt="Stuffed Mushrooms">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Stuffed Mushrooms</h4>
+                                <div></div>
+                                <h4>$5</h4>
+                            </div>
+                            <p>Oven-roasted mushrooms filled with melted cheese, sautéed onions, and a hint of herbs. A perfect balance of creamy and earthy flavors.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/Bruschetta_al_Pomodoro.png" alt="Bruschetta al Pomodoro">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Bruschetta al Pomodoro</h4>
+                                <div></div>
+                                <h4>$8</h4>
+                            </div>
+                            <p>Freshly toasted bread topped with ripe tomatoes, garlic, olive oil, and basil leaves. A classic Italian appetizer full of vibrant taste.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/Chicken_Wings_BBQ.png" alt="Chicken Wings BBQ">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Chicken Wings BBQ</h4>
+                                <div></div>
+                                <h4>$11</h4>
+                            </div>
+                            <p>Grilled chicken wings coated in a smoky barbecue glaze with sesame seeds. Juicy, tender, and packed with bold flavor in every bite.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/Creamy_Pumpkin_Soup.png" alt="Creamy Pumpkin Soup">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Creamy Pumpkin Soup</h4>
+                                <div></div>
+                                <h4>$9</h4>
+                            </div>
+                            <p>A smooth and velvety pumpkin soup made with fresh cream, seasonal spices, and topped with crispy croutons for extra texture.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/Crispy_Caesar_Salad.png" alt="Crispy Caesar Salad">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Crispy Caesar Salad</h4>
+                                <div></div>
+                                <h4>$6</h4>
+                            </div>
+                            <p>Crisp romaine lettuce tossed with garlic croutons, parmesan shavings, and our signature Caesar dressing made in-house.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="menu-content-middle-hidden" class="menu-hidden">
+                    <div class="menu-part">
+                        <img src="media/images/makeaMiniCrabCakesrestaurantfood.png" alt="Mini Crab Cakes">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Mini Crab Cakes</h4>
+                                <div></div>
+                                <h4>$11</h4>
+                            </div>
+                            <p>Indulge in our exquisite golden-seared crab cakes, perfectly paired with a zesty lemon aioli and a hint of fresh dill. </p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/CapreseSkewers.png" alt="Caprese Skewers">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Appetizer</div>
+                            <div class="menu-product">
+                                <h4>Caprese Skewers</h4>
+                                <div></div>
+                                <h4>$7</h4>
+                            </div>
+                            <p>Delicious cherry tomatoes paired with creamy mozzarella balls and fresh basil leaves, all beautifully arranged on skewers </p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/BuffaloWings.png" alt="Buffalo Wings">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Buffalo Wings</h4>
+                                <div></div>
+                                <h4>$10</h4>
+                            </div>
+                            <p>Crispy chicken wings tossed in our spicy buffalo sauce, served with celery sticks and blue cheese dressing.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/SearedSalmonFillet.png" alt="Seared Salmon Fillet">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Seared Salmon Fillet</h4>
+                                <div></div>
+                                <h4>$17</h4>
+                            </div>
+                            <p>Pan-seared salmon served over mashed potatoes with lemon butter sauce and seasonal vegetables.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/WildMushroomRisotto.png" alt="Wild Mushroom Risotto">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Wild Mushroom Risotto</h4>
+                                <div></div>
+                                <h4>$13</h4>
+                            </div>
+                            <p>Arborio rice slow-cooked with porcini mushrooms, parmesan, and a splash of white wine.</p>
+                        </div>
+                    </div>
+                    <div class="menu-part">
+                        <img src="media/images/HerbRoastedChicken.png" alt="Herb Roasted Chicken">
+                        <div class="menu-part-info">
+                            <div class="menu-label">Main Course</div>
+                            <div class="menu-product">
+                                <h4>Herb Roasted Chicken</h4>
+                                <div></div>
+                                <h4>$15</h4>
+                            </div>
+                            <p>Indulge in our exquisite slow-roasted chicken, perfectly marinated with aromatic garlic and fragrant rosemary.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content-bottom">
+                    <button id="toggle-btn" onclick="toggleMenu()">Explore Our Menu</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonial">
+            <div class="menu-content-top">
+                <h3>Real Talk From Real Foodies</h3>
+                <p>Exceptional dining experiences, shared by those who’ve tasted the difference.</p>
+            </div>
+            <div class="testimonial_middle" id="cardsWrapper">
+                <div class="testimonial-item">
+                    <img src="media/images/testimonialJT.png" alt="Еда">
+                    <div class="testimonial-include">
+                        <p class="testimonial-content">"The Wagyu Steak was juicy. The ambiance made it ideal for a memorable evening. I’ll recommend it to anyone who loves great food."</p>
+                        <div class="author-details">
+                            <h5>James Tortellini</h5>
+                            <p>Food Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img src="media/images/testimonialME.png" alt="Еда">
+                    <div class="testimonial-include">
+                        <p class="testimonial-content">"The cappuccino was rich and smooth. The eclectic decor adds a unique charm to the place. Perfect for a relaxing afternoon."</p>
+                        <div class="author-details">
+                            <h5>Maria Espresso</h5>
+                            <p>Coffee Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img src="media/images/testimonialAB.png" alt="Еда">
+                    <div class="testimonial-include">
+                        <p class="testimonial-content">"The roller coasters were exhilarating! The staff was friendly and the atmosphere was electric. A must-visit for thrill-seekers!"</p>
+                        <div class="author-details">
+                            <h5>Tommy Thrill</h5>
+                            <p>Adventure Blogger</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <img src="media/images/4pictureforOtziv.jpg" alt="Еда">
+                    <div class="testimonial-include">
+                        <p class="testimonial-content">"The mocha was a delightful blend of chocolate and coffee. The cozy atmosphere makes it an ideal spot for catching up with friends."</p>
+                        <div class="author-details">
+                            <h5>John Brewster</h5>
+                            <p>Coffee Lover</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <img src="media/images/caption.jpg" alt="Еда">
+                    <div class="testimonial-include">
+                        <p class="testimonial-content">"The friendly staff and inviting ambiance create a perfect environment for enjoying a cup of coffee. Highly recommend!"</p>
+                        <div class="author-details">
+                            <h5>Emily Bean</h5>
+                            <p>Caffeine Connoisseur</p>
+                        </div>
+                    </div>
+                </div>
+        </div>    
+            <div class="testimonial-bottom">
+                <div class="slider-track">
+                    <div class="slider-thumb" id="sliderThumb"></div>
+                </div>
+                <div>
+                    <button id="prevBtn">
+                        <img src="media/images/ButtonLeft.png" alt="кнопка">
+                    </button>
+                    <button id="nextBtn">
+                        <img src="media/images/ButtonRight.png" alt="кнопка">
+                    </button>
+                </div>
+            </div>
+        
+        </section>
+
+        <section id="contact">
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="contact-form">
+                        <h4>Contact Us</h4>
+                        <div class="contact-input-group">
+                            <span> Full name</span>
+                            <input type="text" placeholder="Input text here" required>
+                        </div>
+
+                        <div id="phone-select" class="contact-input-group">
+                            <select>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+375">🇧🇾 +375</option>
+                                <option value="+212">🇲🇦 +212</option>
+                            </select>
+                            <span>Phone Number</span>
+                            <input type="tel" placeholder="+1 234 567 890" required>
+                        </div>
+
+                        <div class="contact-input-group">
+                            <span> Email</span>
+                            <input type="email" placeholder="Input text here" required>
+                        </div>
+
+                        <div class="contact-input-group">
+                            <span> Special Request</span>
+                            <input type="text" placeholder="Input text here" required>
+                        </div>
+
+                        <div class="contact-checkbox">
+                            <input type="checkbox" id="termsCheck" required>
+                            <p>By checking the box you agree to our <a href="TermsOfService.html">Terms of Service</a> and <a href="Privacypolice.html">Privacy Policy</a>.</p>
+                        </div>
+                        <button type="submit" id="submitBtn" disabled onclick="window.location.href='Order.html'">Send Message</button>
+                    </form>
+
+                    <div class="contact-form-div">
+                        <div class="contact-form-top">
+                            <h3>Craving Something Delicious?</h3>
+                            <h5>From savory bites to sweet delights, your cravings end here.</h5>
+                        </div>
+                        <div class="contact-form-bottom">
+                            <div class="contact-form-part">
+                                <h4>Our Location</h4>
+                                <div>
+                                    <img src="media/icon/location.svg" alt="location">
+                                    <p>21 Rue des Lilas 75001 Paris, France</p>
+                                </div>
+                            </div>
+                            <div class="contact-form-part">
+                                <h4>Phone Number</h4>
+                                <div>
+                                    <img src="media/icon/call.svg" alt="call">
+                                    <p>+33 6 12 34 56 78</p>
+                                </div>
+                            </div>
+                            <div class="contact-form-part">
+                                <h4>Email Address</h4>
+                                <div>
+                                    <img src="media/icon/sms.svg" alt="sms">
+                                    <p>hello@platieu.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-form-part">
+                                <h4>Opening Hours</h4>
+                                <div>
+                                    <img src="media/icon/clock.svg" alt="clock">
+                                    <p>Monday - Friday: 12:00 PM - 2:30 PM & 7:00 PM - 10:30 PM</p>
+                                    
+                                </div>
+                                <div>
+                                    <img src="media/icon/clock.svg" alt="clock">
+                                    <p>Saturday: 7:00 PM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-map-container">  
+                    <div class="contact-map-info">
+                        <div class="contact-map-info-left">
+                            
+                            <h4>Platieu Restaurant</h4>
+                            <div class="contact-address">
+                                <img src="media/icon/mapRed.svg" alt="Map">
+                                <p>21 Rue des Lilas 75001 Paris, France</p>
+                            </div>
+                            <div class="contact-address">
+                                <img src="media/icon/callMapInfo.svg" alt="Call">
+                                <p>+33 6 12 34 56 78</p>
+                            </div>
+                            <div class="contact-rating">
+                                <p>4,6</p>
+                                <img src="media/icon/Rating_Stars.svg" alt="Stars">
+                                <span>(1.662)</span>
+                            </div>
+                        </div>
+                        
+                        <button>
+                            <span>Route to restaurant</span>
+                            <img src="media/icon/map.svg" alt="Map">                               
+                        </button>
+                            
+                        
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.9254432113607!2d2.395980224692889!3d48.87869783552875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dbe93e5285f%3A0x3f141830137d329d!2zMjEgUnVlIGRlcyBMaWxhcywgNzUwMTkgUGFyaXMsINCk0YDQsNC90YbQuNGP!5e0!3m2!1sru!2sby!4v1770561035206!5m2!1sru!2sby" width="1240" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="FAQ">
+            <div class="faq-content">
+                <div class="faq-top">
+                    <img src="media/icon/faq-left.svg" alt="завитки">
+                    <div>
+                        <h3>What’s on Your Mind?</h3>
+                        <p>We’ve answered the questions you didn’t know you had.</p>
+                    </div>
+                    <img src="media/icon/faq-right.svg" alt="завитки">
+                </div>
+
+                <div class="faq-middle">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>What are the restaurant's hours of operation?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">We are open every day from 10:00 AM to 10:00 PM</div>
+                    </div>
+                    
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do I need to make a reservation before coming?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">Yes, we recommend making a reservation, especially on weekends.</div>
+                    </div>
+                    
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is there a vegetarian or vegan menu available?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">Yes, we have a dedicated section for vegetarian and vegan dishes.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Does this restaurant offer delivery services?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">Yes, you can order through our website or popular delivery apps.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I host a private event at the restaurant?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">Absolutely! Please contact us via phone to discuss details and booking.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Is parking available?</span>
+                            <button class="faq-btn">+</button>
+                        </div>
+                        <div class="faq-answer">Yes, there is a free parking lot behind the restaurant for our guests.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="blog-content">
+                <div class="blog-top">
+                    <h1>From Our Kitchen to Your Screen</h1>
+                    <p>Dive into recipes, behind the scenes, and tasty tales.</p>
+                </div>
+                <div class="blog-cards" class="block-visible">
+                    <div class="blog-card">
+                        <img src="media/images/blog1.png" alt="Кухня">
+                        
+                            <div>
+                                <h6>April 22, 2025</h6>
+                                <h4>Hosting Events at the Restaurant: What You Need to Know</h4>                          
+                            </div>
+                            <p>From intimate dinners to corporate gatherings, the Restaurant offers exclusive space and services for various types of events. Discover tips and important information before making a reservation.</p>
+                        
+                    </div>
+                    
+                    <div class="blog-card">
+                        <img src="media/images/blog2.png" alt="Кухня">
+                        
+                            <div>
+                                <h6>April 17, 2025</h6>
+                                <h4>How We Support Local Farmers and Ingredients</h4>                          
+                            </div>
+                            <p>We take pride in using local ingredients as part of our commitment to sustainability and quality. Learn how our collaboration with local farmers positively impacts flavor, community, and the environment.</p>
+                        
+                    </div>
+
+                    <div class="blog-card">
+                        <img src="media/images/blog3.png" alt="Кухня">
+                        
+                            <div>
+                                <h6>April 18, 2025</h6>
+                                <h4>Tips for Choosing the Right Dinner Menu at the Restaurant</h4>                          
+                            </div>
+                            <p>Confused about what to order when visiting the Restaurant? This article will help you choose the best dishes based on your taste, mood, or even the weather!</p>
+                        
+                    </div>
+                </div>
+                
+
+
+                
+            
+            <div id="blog-cards-hidden"  class = "block-hidden">
+                <div class="blog-card">
+                    <img src="media/images/news4.png" alt="Описание 2">
+                        <div>
+                            <h6>June 15, 2025</h6>
+                            <h4>A Journey Through Italian Cuisine</h4>
+                        </div>
+                    <p>Explore the rich flavors and traditions that make Italian cuisine beloved around the world...</p>
+                </div>
+            
+
+                <div class="blog-card">
+                    <img src="media/images/news5.png" alt="Описание 3">
+                        <div>
+                            <h6>July 20, 2025</h6>
+                            <h4>The Secrets of Perfect Pastry</h4>
+                        </div>
+                    <p>Learn the techniques that pastry chefs use to create flaky, delicious pastries...</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="media/images/news6.png" alt="Описание 4">
+                        <div>
+                            <h6>August 25, 2025</h6>
+                            <h4>Exploring Vegan Delights</h4>
+                        </div>
+                    <p class="card-text">Discover how to create mouthwatering vegan dishes that everyone will love...</p>
+                </div>
+            </div>
+            <button id="blockView_btn" onclick="toggleBlog()">View All</button>
+
+        </div>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-top-content">
+                    <div class="footer-content-part1">
+                        <h1>Explore Our French-Inspired Dishes</h1>
+                        <button onclick="scrollToSection('menu')">
+                            <span>View Menu</span>
+                        <img src="media/icon/ComponentStrelka.svg" alt="">
+                    </button>
+                </div>
+                <div class="footer-content-part2">
+                    <button class = "SearchBtn" onclick="scrollToSection('hero_section')">Home</button>
+                    <button class = "SearchBtn" onclick="scrollToSection('company_info_section')">Our Story</button>
+                    <button class = "SearchBtn" onclick="scrollToSection('menu')">Menu</button>
+                    <button class = "SearchBtn" onclick="scrollToSection('contact-map-container')">Location</button>
+                    <button class = "SearchBtn" onclick="scrollToSection('blog')">News</button>
+                </div>
+                <div class="footer-content-part3">
+                    <h3>Connect On</h3>
+                    <div>
+                        <a href="">
+                            <img src="media/icon/Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="">
+                            <img src="media/icon/Instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="">
+                            <img src="media/icon/X.com.svg" alt="X.com">
+                        </a>
+                        <a href="">
+                            <img src="media/icon/Whatsapp.svg" alt="Whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top-text">
+                <p>©Platieu 2025. All rights reserved.</p>
+                <div class="footer-top-links">
+                    <a href="Privacypolice.html">Privacy Policy</a>
+                    <div></div>
+                    <a href="TermsOfService.html">Terms of Services</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="footer-bottom">
+            <h1>Platieu</h1>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

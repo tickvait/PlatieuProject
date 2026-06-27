@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleOrder.Css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Platieu</title>
+    <link rel="shortcut icon" href="media/icon/MainIcon.svg" type="image/png">
+    <link rel="icon" href="media/icon/MainIcon.svg" type="image/png">
+</head>
+
+<body>
+    <header>
+        <img src="media/icon/Logo.svg" alt="logo">
+        <div id="MenuBtnForPC">
+            <button class = "SearchBtn" onclick="window.location.href='index.html'">Home</button>
+            
+        </div>
+        
+
+        <div class="burger_menu_container">
+            
+            <div id="dropdown-menu" class="hidden">
+            
+                <button class = "dropdown-menu_button" onclick="window.location.href='index.html'">Home</button>
+                
+            </div>
+        </div>
+        <button id="burger_btn">
+            <img src="media/icon/burger_btn.svg" alt="menu button">
+        </button>
+        
+    </header>
+
+        <section id="NoneCard">
+
+        </section>
+        <section id="CardOrder">
+            <div class="card">
+                <div class="icon">✓</div>
+                <h2>Thank You for Your Reservation</h2>
+                <p class="description">Your table has been successfully requested. We've received your reservation details along with your deposit proof. Our team will review and send a confirmation email shortly.</p>
+                
+                <div class="details">
+                    <div class="row"><span>Transaction ID</span> <span id="ID-field">-</span></div>
+                    <div class="row"><span>Date</span> <span id="date-field">-</span></div>
+                    <div class="row"><span>Type Services</span> <span id="TypeServ-field">-</span></div>
+                    <div class="row"><span>Total</span> <span id="Money-field">-</span></div>
+                </div>
+            
+                <div class="actions">
+                    <button class="btn-primary" onclick="updateDate()">Download Receipt</button>
+                    <button class="btn-secondary" onclick="window.location.href='index.html'">Explore Our Menu</button>
+                </div>
+                </div>
+        </section>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-content">
+                <div class="footer-content-part1">
+                    <h1>Explore Our French-Inspired Dishes</h1>
+                    <button onclick="window.location.href='index.html'">
+                        <span>View Menu</span>
+                    <img src="media/icon/ComponentStrelka.svg" alt="">
+                </button>
+            </div>
+            <div class="footer-content-part2">
+                <button class = "SearchBtn" onclick="window.location.href='index.html'">Home</button>
+            </div>
+            <div class="footer-content-part3">
+                <h3>Connect On</h3>
+                <div>
+                    <a href="">
+                        <img src="media/icon/Facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="">
+                        <img src="media/icon/Instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="">
+                        <img src="media/icon/X.com.svg" alt="X.com">
+                    </a>
+                    <a href="">
+                        <img src="media/icon/Whatsapp.svg" alt="Whatsapp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top-text">
+            <p>©Platieu 2025. All rights reserved.</p>
+            <div class="footer-top-links">
+                <a href="Privacypolice.html">Privacy Policy</a>
+                <div></div>
+                <a href="">Terms of Services</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="footer-bottom">
+        <h1>Platieu</h1>
+    </div>
+</footer>
+<script src="scriptOrder.js"></script>
+</body>
+</html> 
