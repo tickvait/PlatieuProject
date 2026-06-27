@@ -1715,7 +1715,7 @@ footer {
         font-size: 32px;
     }
     #menu-content-middle-hidden{
-        margin-top: 120px;
+        padding: 120px;
     }
 }
 
