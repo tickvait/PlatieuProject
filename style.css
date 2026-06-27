@@ -345,11 +345,13 @@ main{
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 
-    margin: 0px;
-
+    margin-top: 70px;
+    margin-bottom: 10px;
+    
 }
 
 .menu-part{
+    
     display: flex;
     justify-content: start;
     gap: 24px;
@@ -358,7 +360,7 @@ main{
 
 .menu-part img{
     width: 156px;
-    height: 156px;
+    height: 156px;   
     object-fit: cover;
     border-radius: 12px;
 
@@ -1308,6 +1310,7 @@ footer {
 }
 
 .menu-hidden {
+    
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -1662,15 +1665,9 @@ footer {
     .testimonial-content{
         font-size: 12px;
     }
-    #menu-content-middle-hidden{
-        margin-top: 60px;
-    }
+    
 }
-@media (max-width: 420px){
-    #menu-content-middle-hidden{
-        margin-top: 80px;
-    }
-}
+
 @media (max-width: 375px){
     header{
         padding: 0px 20px;
@@ -1718,12 +1715,6 @@ footer {
     .footer-content-part1 h1{
         font-size: 32px;
     }
-    #menu-content-middle-hidden{
-        margin-top: 100px;
-    }
+    
 }
-@media (max-width: 350px){
-    #menu-content-middle-hidden{
-        padding: 100px;
-    }
-}
+
